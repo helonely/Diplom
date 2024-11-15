@@ -46,3 +46,17 @@ class Book(models.Model):
     class Meta:
         verbose_name = 'Книга'
         verbose_name_plural = 'Книги'
+
+
+class Loan(models.Model):
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name='Книга')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Пользователь')
+    issue_date = models.DateTimeField(auto_now_add=True, verbose_name='Дата выдачи')
+    return_date = models.DateTimeField(null=True, blank=True, verbose_name='Дата возврата')
+
+    def __str__(self):
+        return f"{self.book.name} - {self.user.full_name}"
+
+    class Meta:
+        verbose_name = 'Выдача книги'
+        verbose_name_plural = 'Выдача книг'
