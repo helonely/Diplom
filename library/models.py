@@ -15,11 +15,30 @@ class Author(models.Model):
 
 
 class Book(models.Model):
-    name = models.CharField(max_length=100, verbose_name='Название книги')
-    availability = models.BooleanField(verbose_name='Наличие книги')
-    genre = models.CharField(max_length=100, verbose_name='Жанр книги')
-    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Пользователь', blank=True, null=True)
-    author = models.ForeignKey(Author, on_delete=models.CASCADE, verbose_name='Автор книги')
+    name = models.CharField(
+        max_length=100,
+        verbose_name='Название книги'
+    )
+
+    availability = models.BooleanField(
+        verbose_name='Наличие книги'
+    )
+
+    genre = models.CharField(
+        max_length=100,
+        verbose_name='Жанр книги'
+    )
+
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE,
+        verbose_name='Пользователь',
+        blank=True, null=True
+    )
+
+    author = models.ForeignKey(
+        Author, on_delete=models.CASCADE,
+        verbose_name='Автор книги'
+    )
 
     def __str__(self):
         return self.name
