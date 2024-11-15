@@ -4,6 +4,7 @@
 [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-464646?style=flat-square&logo=PostgreSQL)](https://www.postgresql.org/)
 [![PEP 8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![OpenAPI](https://img.shields.io/badge/OpenAPI-3.0.0-yellowgreen.svg)](https://swagger.io/specification/)
+[![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/)
 
 DF1.
 ### REST API для управления библиотекой - это веб-приложение,
