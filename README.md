@@ -1,33 +1,40 @@
+[![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/-Django-464646?style=flat-square&logo=Django)](https://www.djangoproject.com/)
+[![DRF](https://img.shields.io/badge/-DRF-464646?style=flat-square&logo=django)](https://www.django-rest-framework.org/)
+[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-464646?style=flat-square&logo=PostgreSQL)](https://www.postgresql.org/)
+[![PEP 8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+[![OpenAPI](https://img.shields.io/badge/OpenAPI-3.0.0-yellowgreen.svg)](https://swagger.io/specification/)
+
 DF1.
-REST API для управления библиотекой - это веб-приложение,
+###REST API для управления библиотекой - это веб-приложение,
 построенное с использованием Django Rest Framework (DRF),
 которое предоставляет функции для управления книгами,
 авторами и пользователями в библиотеке. 
 
-Вот краткое описание проекта:
+###Вот краткое описание проекта:
 Основные возможности
-Управление книгами:
+###Управление книгами:
     Создание, редактирование и удаление книг
     Получение списка всех книг
     Поиск книг по различным критериям (название, автор, жанр и т.д.)
-Управление авторами:
+###Управление авторами:
     Создание, редактирование и удаление авторов
     Получение списка всех авторов
-Управление пользователями:
+###Управление пользователями:
     Регистрация и авторизация пользователей
     Получение информации о пользователях
-Выдача книг:
+###Выдача книг:
     Запись информации о выдаче книги пользователю
     Отслеживание статуса возврата книги
-Технические детали
+###Технические детали
     Фреймворк: Django Rest Framework (DRF)
     База данных: PostgresSQL
     Контейнеризация: Docker и Docker Compose
     Документация API: OpenAPI (автогенерируемая)
     Стандартизация кода: PEP8
 
-Инструкция:
-Установка
+###Инструкция:
+##Установка
 1. Клонируйте репозиторий:
     git clone https://github.com/helonely/Diplom.git
 2. Активируйте виртуальное окружение:
@@ -43,6 +50,6 @@ REST API для управления библиотекой - это веб-пр
 
 6. В браузере по адресу http://localhost:8000/swagger/ можно ознакомиться с описанием API.
 
-Авторы
+###Авторы
 SKYPRO,
-Идрисов Равиль - разработчик проекта.
+https://github.com/helonely - разработчик проекта.
