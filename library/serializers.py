@@ -14,3 +14,10 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = ('id', 'name', 'availability', 'genre', 'user', 'author',)
+
+
+class LoanSerializer(serializers.ModelSerializer):
+    """Serializer for Loan"""
+    class Meta:
+        model = Book
+        fields = ('id', 'book', 'user', 'issue_date', 'return_date',)
